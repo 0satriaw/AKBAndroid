@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_menu"
+        android:icon="@drawable/iconmonstr_menu"
+        android:title="@string/title_menu" />
+
+    <item
+        android:id="@+id/navigation_pesanan"
+        android:icon="@drawable/iconmonstr_shopping_cart3240"
+        android:title="@string/title_pesanan" />
+
+        <item
+            android:id="@+id/navigation_transaksi"
+            android:icon="@drawable/ic_notifications_black_24dp"
+            android:title="@string/title_transaction" />
+
+</menu>

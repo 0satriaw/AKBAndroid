@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <data>
+        <variable
+            name="pesanan"
+            type="com.igustinyomansatriawibawa.atmakoreanbbq.ui.pesanan.model.Pesanan" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:elevation="20dp"
+        android:id="@+id/rootView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imagemenu"
+            android:layout_width="130dp"
+            android:layout_height="120dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/tv_namamenu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imagemenu"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textAlignment="center"
+            tools:text="Beef Short Plate" />
+
+        <TextView
+            android:id="@+id/tv_tipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/black"
+            app:layout_constraintTop_toBottomOf="@+id/tv_namamenu"
+            app:layout_constraintStart_toEndOf="@+id/imagemenu"
+            tools:text="Makanan Side Dish" />
+
+        <TextView
+            android:id="@+id/tv_jumlah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            app:layout_constraintTop_toBottomOf="@+id/tv_namamenu"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Jumlah : 5" />
+
+
+        <TextView
+            android:id="@+id/tv_subtotal"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="5dp"
+            android:autoSizeTextType="uniform"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            app:layout_constraintTop_toBottomOf="@+id/tv_jumlah"
+            app:layout_constraintStart_toEndOf="@+id/imagemenu"
+            tools:text="Sub Total : Rp. 20000"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnHapus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            android:textColor="@android:color/white"
+            app:layout_constraintTop_toBottomOf="@+id/tv_subtotal"
+            app:layout_constraintStart_toEndOf="@id/imagemenu"
+            android:text="Hapus"/>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            android:textColor="@android:color/white"
+            app:layout_constraintTop_toBottomOf="@+id/tv_subtotal"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="Edit"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
